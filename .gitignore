@@ -1,0 +1,7 @@
+.do.cfg
+.do.state
+*.do
+*/**.do
+.ipynb_checkpoints/
+*/**.pyc
+*.pyc
