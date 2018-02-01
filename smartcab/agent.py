@@ -43,7 +43,6 @@ class LearningAgent(Agent):
             #self.epsilon = self.epsilon - 0.05
             #self.epsilon =  1.0/(self.t **2)
             self.epsilon = math.fabs(math.cos(0.01*self.t))
-            #self.epsilon = math.fabs(math.exp(0.01*self.t))
 
         return None
 
@@ -162,7 +161,7 @@ def run():
     
     ##############
     # Create the driving agent
-    # Flags:
+       # Flags:
     #   learning   - set to True to force the driving agent to use Q-learning
     #    * epsilon - continuous value for the exploration factor, default is 1
     #    * alpha   - continuous value for the learning rate, default is 0.5
